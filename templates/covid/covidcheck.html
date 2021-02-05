@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form action="agecheck" method="post">
+	{% csrf_token %}
+	<center><strong>Please Select Your Age</strong></center>
+	<input type="radio" name="r1" value="<60">Less then 60 <br><br>
+	<input type="radio" name="r1" value=">=60">Greater or equal to 60<br><br>
+	<input type="submit" name="btn" value="CLICK">
+	</form>
+	{{key}}
+
+	
+
+</body>
+</html>

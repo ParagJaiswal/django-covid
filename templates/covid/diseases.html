@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form action="o" method="post">
+		{% csrf_token %}
+		{{key}}<br><br>
+		
+		<p><h3>Please Select the option if you have any Diseases</h3></p>
+		<input type="checkbox" name="chk[]" value="asthama">Asthama<br><br>
+		<input type="checkbox" name="chk[]" value="heartattack">Heart Attack<br><br>
+		<input type="checkbox" name="chk[]" value="sugar">Sugar<br><br>
+		<input type="checkbox" name="chk[]" value="li">Lungs Infection<br><br>
+		<input type="checkbox" name="chk[]" value="kp">Kidney Problem<br><br>
+		<input type="checkbox" name="chk[]" value="none">None<br><br>
+		<input type="submit" name="btn" value= 'CHECK'>
+	</form>
+<span style="background-color: yellow">{{health}}</span>
+</body>
+</html>
